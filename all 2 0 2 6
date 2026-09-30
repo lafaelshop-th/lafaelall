@@ -1,0 +1,59 @@
+--[[
+    Script Loader ตาม PlaceId
+    ใส่สคริปต์ของแต่ละแมพลงในตารางได้เลย
+]]
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+--==================== ตารางสคริปต์ตาม PlaceId ====================--
+local Scripts = {
+    [2753915549] = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ตัวอย่าง/BloxFruits.lua"))()
+    end,
+    [4442272183] = function()  
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ตัวอย่าง/BloxFruits.lua"))()
+    end,
+    [7449423635] = function()  
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ตัวอย่าง/BloxFruits.lua"))()
+    end,
+
+    [2788229376] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ตัวอย่าง/DaHood.lua"))()
+    end,
+
+    [155615604] = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ตัวอย่าง/PrisonLife.lua"))()
+    end,
+
+    -- [PlaceId] = function()
+    --   loadstring(game:HttpGet("ลิงก์สคริปต์"))()
+    -- end,
+}
+
+--==================== สคริปต์สำรอง (Universal) ====================--
+local function UniversalScript()
+    print("[Loader] ไม่พบสคริปต์เฉพาะแมพนี้ → ใช้ Universal")
+    -- ใส่สคริปต์ที่ใช้ได้เกือบทุกแมพตรงนี้
+    -- ตัวอย่าง:
+    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end
+
+local function RunScript()
+    local placeId = game.PlaceId
+    print("[Loader] PlaceId ปัจจุบัน:", placeId)
+
+    local scriptFunc = Scripts[placeId]
+
+    if scriptFunc then
+        print("[Loader] พบสคริปต์สำหรับแมพนี้ กำลังรัน...")
+        local success, err = pcall(scriptFunc)
+        if not success then
+            warn("[Loader] รันสคริปต์ล้มเหลว:", err)
+        end
+    else
+        UniversalScript()
+    end
+end
+
+RunScript()
