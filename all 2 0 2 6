@@ -1,15 +1,11 @@
---[[
-    Script Loader ตาม PlaceId
-    ใส่สคริปต์ของแต่ละแมพลงในตารางได้เลย
-]]
+
 
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
---==================== ตารางสคริปต์ตาม PlaceId ====================--
 local Scripts = {
-    [2753915549] = function() 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ตัวอย่าง/BloxFruits.lua"))()
+    [113506071094099] = function() 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP"))()
     end,
     [4442272183] = function()  
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ตัวอย่าง/BloxFruits.lua"))()
