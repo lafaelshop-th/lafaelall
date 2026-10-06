@@ -1,5 +1,3 @@
-
-
 local PlaceId = game.PlaceId
 
 local MapScripts = {
