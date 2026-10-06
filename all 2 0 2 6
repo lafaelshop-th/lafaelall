@@ -1,28 +1,25 @@
 
-local PlaceId = game.PlaceId
-local JobId = game.JobId
 
-local Scripts = {
-    [93853815957083] = "https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP",
+local PlaceId = game.PlaceId
+
+local MapScripts = {
+    [93853815957083] = function()
+https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP
+    end,
+
+    [987654321] = function()
+
+    end,
 }
 
-local FallbackScript = "loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/LAFAEL%20Universal"))()"
-
-local function LoadScript(url, mode)
-    local success, err = pcall(function()
-        loadstring(game:HttpGet(url))()
-    end)
-
-    if success then
-        print("[Universal] โหลดสคริปต์สำเร็จ (".. mode.. ") | PlaceId: ".. PlaceId)
-    else
-        warn("[Universal] โหลดสคริปต์ล้มเหลว:", err)
-    end
+local DefaultScript = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/LAFAEL%20Universal"))()
 end
 
-if Scripts[PlaceId] then
-    LoadScript(Scripts[PlaceId], "specific")
+local Script = MapScripts[PlaceId]
+
+if Script then
+    Script()
 else
-    print("[Universal] ไม่พบเกมนี้ในระบบ (PlaceId: ".. PlaceId.. ") กำลังโหลดสคริปต์กลาง...")
-    LoadScript(FallbackScript, "fallback")
+    DefaultScript()
 end
