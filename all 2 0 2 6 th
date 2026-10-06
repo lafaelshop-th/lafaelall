@@ -1,0 +1,19 @@
+local PlaceId = game.PlaceId
+
+local MapScripts = {
+    [93853815957083] = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP"))()
+    end,
+
+    [987654321] = function()
+        
+    end
+}
+
+local selectedScript = MapScripts[PlaceId]
+
+if selectedScript ~= nil then
+    selectedScript()
+else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/LAFAEL%20Universal"))()
+end
