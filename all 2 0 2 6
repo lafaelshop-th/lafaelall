@@ -21,18 +21,10 @@ local Scripts = {
     [155615604] = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/ตัวอย่าง/PrisonLife.lua"))()
     end,
-
-    -- [PlaceId] = function()
-    --   loadstring(game:HttpGet("ลิงก์สคริปต์"))()
-    -- end,
 }
 
---==================== สคริปต์สำรอง (Universal) ====================--
 local function UniversalScript()
-    print("[Loader] ไม่พบสคริปต์เฉพาะแมพนี้ → ใช้ Universal")
-    -- ใส่สคริปต์ที่ใช้ได้เกือบทุกแมพตรงนี้
-    -- ตัวอย่าง:
-    -- loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/LAFAEL%20Universal
 end
 
 local function RunScript()
