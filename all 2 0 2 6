@@ -24,8 +24,8 @@ local Scripts = {
 }
 
 local function UniversalScript()
-    https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/LAFAEL%20Universal
-end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/LAFAEL%20Universal"))()
+end,
 
 local function RunScript()
     local placeId = game.PlaceId
