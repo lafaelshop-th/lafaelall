@@ -6,8 +6,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/k
     end,
 
     [987654321] = function()
-        print("Map 2")
-        -- โค้ด Map 2
+        
     end
 }
 
