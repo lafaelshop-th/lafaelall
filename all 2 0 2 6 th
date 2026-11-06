@@ -5,7 +5,7 @@ local MapScripts = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP"))()
     end,
 
-    [987654321] = function()
+    [103854444055060] = function()
         
     end
 }
