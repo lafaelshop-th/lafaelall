@@ -6,7 +6,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/k
     end,
 
     [103854444055060] = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/Silent%20Assassins"))()
+loadstring(game:HttpGet("https://rununited.floot.app/_api/raw?v_n=XLz1ZlqOgB6rNfr8HjBWh4uFbK8_YELJB_58OIHG"))()
     end
 }
 
