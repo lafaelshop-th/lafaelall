@@ -5,6 +5,10 @@ local MapScripts = {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP"))()
     end,
 
+    [93853815957083] = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP"))()
+    end,
+
     [103854444055060] = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/Silent%20Assassins"))()
     end
