@@ -6,7 +6,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/k
     end,
 
     [114204398207377] = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/Survive%20Zombie%20Arena"))()
     end,
 
     [103854444055060] = function()
