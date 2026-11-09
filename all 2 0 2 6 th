@@ -2,21 +2,27 @@ local PlaceId = game.PlaceId
 
 local MapScripts = {
     [93853815957083] = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP"))()
     end,
 
     [114204398207377] = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/Survive%20Zombie%20Arena"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/Survive%20Zombie%20Arena"))()
     end,
 
     [103854444055060] = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/Silent%20Assassins"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/Silent%20Assassins"))()
     end
 }
 
+local function isSurviveZombie()
+    return workspace:FindFirstChild("Zombies_Local") ~= nil
+end
+
 local selectedScript = MapScripts[PlaceId]
 
-if selectedScript ~= nil then
+if isSurviveZombie() then
+    MapScripts[114204398207377]()
+elseif selectedScript ~= nil then
     selectedScript()
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/LAFAEL%20Universal"))()
