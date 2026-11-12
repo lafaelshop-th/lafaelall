@@ -2,7 +2,7 @@ local PlaceId = game.PlaceId
 
 local MapScripts = {
     [93853815957083] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/starioth547-netizen/key-system/refs/heads/main/STARP"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/SHARP"))()
     end,
 
     [114204398207377] = function()
