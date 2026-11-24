@@ -6,7 +6,7 @@ local MapScripts = {
     end,
 
     [662417684] = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/SHARP"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/lafaelshop-th/lafaelall/refs/heads/main/Lucky%20block"))()
     end,
 
     [114204398207377] = function()
